@@ -239,6 +239,75 @@
                 </div>
             </div>
 			</section>
+<!-- 모달 -->
+			<script src="https://code.jquery.com/jquery-latest.js"></script> 
+ 
+    <style>
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+    
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 30%; /* Could be more or less, depending on screen size */                          
+        }
+ 
+</style>
+ 
+ 
+ 
+    <!-- 모달 id -->
+    <div id="myModal" class="modal">
+ 
+      <!-- contents -->
+      <div class="modal-content">
+                <p style="text-align: center;"><span style="font-size: 14pt;"><b><span style="color: goldenrod; font-size: 24pt;">RE CLAN 공지</span></b></span></p>
+                <p style="text-align: center; line-height: 1.5;"><span style="font-size: 14pt;">환영합니다 모험자분들 만나서 방가워요!</span></p>
+		        <p style="text-align: center; line-height: 1.5;"><br /></p>
+                <p style="text-align: center; line-height: 1.5;"><b><span style="color: hotpink; font-size: 14pt;">RE 클랜에 들어오기에 앞서 몇가지 공지사항이 있어요</span></b></p>
+                <p style="text-align: center; line-height: 1.5;"><span style="color: cornflowerblue; font-size: 14pt;">1.접속은 꼬박꼬박~ 자주 들어오지 않으면 화낼꼬야!!</span></p>
+                <p style="text-align: center; line-height: 1.5;"><span style="color: cornflowerblue; font-size: 14pt;">2.클랜전때는 꼬박꼬박 3타! 1등을 놓치지 말라구요!!</span></p>
+                <p style="text-align: center; line-height: 1.5;"><span style="color: cornflowerblue; font-size: 14pt;">3.싸우지 말기! 싸우면 기분이 좋지 않아요 ㅠㅡㅠ</span></p>
+		        <p style="text-align: center; line-height: 1.5;"><span style="font-size: 14pt;"><br /></span></p>
+                <p style="text-align: center; line-height: 1.5;"><span style="color: darkorange; font-size: 14pt;">이 3가지만 지켜줬으면 좋겠어요! 그럼 이상으로 마칠게요</span></p>
+                <p style="text-align: center; line-height: 1.5;"><br /></p>
+                <p><br /></p>
+            <div style="cursor:pointer;background-color:#DDDDDD;text-align: center;padding-bottom: 10px;padding-top: 10px;" onClick="close_pop();">
+                <span class="pop_bt" style="font-size: 13pt;" >
+                     그럼 모험자 분들 환영합니다!
+                </span>
+            </div>
+      </div>
+ 
+    </div>
+        <!--End Modal-->
+ 
+ 
+    <script type="text/javascript">
+      
+        jQuery(document).ready(function() {
+                $('#myModal').show();
+        });
+        //팝업 Close 기능
+        function close_pop(flag) {
+             $('#myModal').hide();
+        };
+        
+      </script>
         <!-- 푸터-->
         <footer class="bg-light py-5">
             <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - KittyNyang X RE CLAN</div></div>
