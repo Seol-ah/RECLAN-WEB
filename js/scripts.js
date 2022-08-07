@@ -53,7 +53,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Activate SimpleLightbox plugin for portfolio items
     new SimpleLightbox({
-        elements: '#cuteprincess a.portfolio-box'
+        elements: '#cuteprincess a.cuteprincess-box'
     });
 
 });
